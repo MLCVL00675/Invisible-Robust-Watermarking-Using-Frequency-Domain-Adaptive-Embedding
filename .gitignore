@@ -1,0 +1,27 @@
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# Experimental data and results
+results/
+misc/
+experiments/
+*.csv
+*.log
+*.png
+*.jpg
+*.jpeg
+
+# Attacks and ablation scripts (excluded as per submission requirements)
+watermark/attacks.py
+run_ablation_experiment.py
+generate_corrected_alpha_sweep_analysis.py
+benchmark_internet_images.py
+
+# IDE and OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
