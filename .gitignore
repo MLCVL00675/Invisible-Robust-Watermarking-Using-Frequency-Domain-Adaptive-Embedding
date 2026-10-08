@@ -4,17 +4,22 @@ __pycache__/
 *$py.class
 .pytest_cache/
 
-# Experimental data and results
+# Experimental outputs, reports, and benchmarks
 results/
 misc/
 experiments/
 *.csv
 *.log
+
+# Exclude generated plots and results from root
 *.png
 *.jpg
 *.jpeg
 
-# Attacks and ablation scripts (excluded as per submission requirements)
+# Explicitly allow sample test images and watermarks in data/
+!data/**
+
+# Attacks and ablation scripts (excluded from submission)
 watermark/attacks.py
 run_ablation_experiment.py
 generate_corrected_alpha_sweep_analysis.py
